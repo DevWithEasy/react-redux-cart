@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+    @apply flex justify-between m-2 gap-x-1
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.product-container{
+    @apply w-1/2 m-2 space-y-2
+}
+.product-container .title{
+    @apply text-center text-xl font-bold font-serif
+}
+
+.product{
+    @apply flex justify-between border rounded p-2 font-mono
+}
+
+.product_image{
+    @apply w-4/12
+}
+
+.product_image img{
+    @apply h-24
+}
+
+.product_details{
+    @apply w-8/12 flex justify-between items-center
+}
+
+.product_details button{
+    @apply px-2 py-1 text-white bg-red-500 rounded
+}
+
+.product_details p .name{
+    @apply font-bold
+}
+
+.product_details input{
+    @apply w-12 border py-0.5 pl-2 rounded focus:outline-none
+}
+
+.product_details .adjust{
+    @apply space-x-1
+}
+.product_details .adjust button{
+    @apply w-8 h-8 px-2 py-1 text-white bg-red-500 rounded-full
+}
+.cart-container{
+    @apply w-1/2 m-2 space-y-2
+}
+
+.cart-container .title{
+    @apply text-center text-xl font-bold font-serif mb-2
+}
+.cart-container .cart{
+    @apply flex justify-end 
+}
+.cart-container .cart span {
+    @apply flex items-center relative text-red-500
+}
+.cart-container .cart span p{
+    @apply w-6 h-6 flex justify-center items-center absolute -right-2 -top-2 text-white rounded-full bg-red-500 text-center text-xs
+}
+.cart-container .products{
+    @apply space-y-2
 }
