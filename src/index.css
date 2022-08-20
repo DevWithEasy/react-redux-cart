@@ -80,10 +80,10 @@
   @apply w-6 h-6 flex justify-center items-center absolute -right-2 -top-2 text-white rounded-full bg-red-500 text-center text-xs;
 }
 .cart-container .products {
-  @apply w-1/2 space-y-2;
+  @apply w-full md:w-1/2 space-y-2;
 }
 .cart-container .price {
-  @apply w-1/2 p-2 rounded;
+  @apply w-full md:w-1/2 p-2 rounded;
 }
 .cart-container .price p {
   @apply flex justify-between;

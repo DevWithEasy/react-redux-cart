@@ -26,7 +26,7 @@ const CartContainer = () => {
                     <p>{count}</p>
                 </span>
             </div> */}
-            <div className="flex justify-between gap-x-1">
+            <div className="flex flex-col-reverse md:flex-row justify-between gap-x-1">
                 <div className="products">
                     {
                         cart.map(product=><CartItem key={product.id} product={product}/>)
