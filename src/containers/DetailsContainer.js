@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import {Link,useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import { addProduct } from './../redux/Action/actions';
 
 const DetailsContainer = () => {
@@ -17,7 +17,7 @@ const DetailsContainer = () => {
         <>
         {
             product ? 
-            <div className='product'>
+            <div className='product mt-16 mx-2'>
             <div className="product_image">
                 <img src={product.image} alt="" />
             </div>

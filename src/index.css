@@ -2,89 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-container{
-    @apply bg-red-500 px-4 py-2 flex justify-between items-center fixed w-full top-0
+.nav-container {
+  @apply bg-red-500 px-4 py-2 flex justify-between items-center fixed w-full top-0;
 }
 
-.nav-container .logo{
-    @apply text-white text-2xl font-bold
+.nav-container .logo {
+  @apply text-white text-2xl font-bold;
 }
 
-.nav-container .nav-icon{
-    @apply flex justify-end
+.nav-container .nav-icon {
+  @apply flex justify-end;
 }
 
-.nav-container .cart-icon p{
-    @apply flex items-center px-2 py-1 bg-white rounded-lg
+.nav-container .cart-icon p {
+  @apply flex items-center px-2 py-1 bg-white rounded-lg;
 }
 
-.nav-container .cart-icon p span{
-    @apply flex items-center px-2 py-1 bg-white rounded-lg
+.nav-container .cart-icon p span {
+  @apply flex items-center px-2 py-1 bg-white rounded-lg;
 }
 
-.product-container{
-    @apply mt-16 mx-2 space-y-2
+.product-container {
+  @apply mt-16 mx-2 space-y-2;
 }
-.product-container .title{
-    @apply text-center text-xl font-bold font-serif
-}
-
-.product{
-    @apply flex justify-between border rounded p-2 font-mono
+.product-container .title {
+  @apply text-center text-xl font-bold font-serif;
 }
 
-.product_image{
-    @apply w-4/12 flex justify-center items-center
+.product {
+  @apply flex justify-between border rounded p-2 font-mono;
 }
 
-.product_image img{
-    @apply h-40
+.product_image {
+  @apply w-4/12 flex justify-center items-center;
 }
 
-.product_details{
-    @apply w-8/12 pl-2 space-y-2
+.product_image img {
+  @apply h-40;
 }
 
-.product_details button{
-    @apply px-2 py-1 text-white bg-red-500 rounded
+.product_details {
+  @apply w-8/12 pl-2 space-y-2;
 }
 
-.product_details .name{
-    @apply font-bold text-blue-500 text-xl cursor-pointer
+.product_details button {
+  @apply px-2 py-1 text-white bg-red-500 rounded;
 }
 
-.product_details input{
-    @apply w-12 border py-0.5 pl-2 rounded focus:outline-none
+.product_details .name {
+  @apply font-bold text-blue-500 text-xl cursor-pointer;
 }
 
-.product_details .adjust{
-    @apply space-x-1
-}
-.product_details .adjust button{
-    @apply w-8 h-8 px-2 py-1 text-white bg-red-500 rounded-full
-}
-.cart-container{
-    @apply m-2 space-y-2
+.product_details input {
+  @apply w-12 border py-0.5 pl-2 rounded focus:outline-none;
 }
 
-.cart-container .title{
-    @apply text-center text-xl font-bold font-serif mb-2
+.product_details .adjust {
+  @apply space-x-1;
 }
-.cart-container .cart{
-    @apply flex justify-end 
+.product_details .adjust button {
+  @apply w-8 h-8 px-2 py-1 text-white bg-red-500 rounded-full;
+}
+.cart-container {
+  @apply mt-16 mx-2 space-y-2;
+}
+
+.cart-container .title {
+  @apply text-center text-xl font-bold font-serif mb-2;
+}
+.cart-container .cart {
+  @apply flex justify-end;
 }
 .cart-container .cart span {
-    @apply flex items-center relative text-red-500
+  @apply flex items-center relative text-red-500;
 }
-.cart-container .cart span p{
-    @apply w-6 h-6 flex justify-center items-center absolute -right-2 -top-2 text-white rounded-full bg-red-500 text-center text-xs
+.cart-container .cart span p {
+  @apply w-6 h-6 flex justify-center items-center absolute -right-2 -top-2 text-white rounded-full bg-red-500 text-center text-xs;
 }
-.cart-container .products{
-    @apply w-1/2 space-y-2
+.cart-container .products {
+  @apply w-1/2 space-y-2;
 }
-.cart-container .price{
-    @apply w-1/2 p-2 rounded
+.cart-container .price {
+  @apply w-1/2 p-2 rounded;
 }
-.cart-container .price p{
-    @apply flex justify-between
+.cart-container .price p {
+  @apply flex justify-between;
 }

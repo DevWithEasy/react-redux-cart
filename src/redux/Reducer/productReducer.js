@@ -1,5 +1,5 @@
 import  products  from "../../data/json/products.json"
-import { ADD_PRODUCT,REMOVE_PRODUCT,ADJUST_QTY, LOAD_ALL_PRODUCTS,LOAD_CURRENT_PRODUCT } from "../Action/actions"
+import { ADD_PRODUCT,REMOVE_PRODUCT,ADJUST_QTY, LOAD_ALL_PRODUCTS } from "../Action/actions"
 
 const initailState = {
     products:[...products],
@@ -39,10 +39,6 @@ export const productReducer = (state = initailState, action) => {
                 cart:state.cart.map(item=> item.id === action.id? {...item,qty:+action.qty} : item)
             }
 
-        case LOAD_CURRENT_PRODUCT:
-            return{
-
-            }
         default:
             return state
     }
