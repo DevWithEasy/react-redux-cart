@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .nav-container{
-    @apply bg-red-500 px-4 py-2 flex justify-between items-center
+    @apply bg-red-500 px-4 py-2 flex justify-between items-center fixed w-full top-0
 }
 
 .nav-container .logo{
@@ -23,7 +23,7 @@
 }
 
 .product-container{
-    @apply m-2 space-y-2
+    @apply mt-16 mx-2 space-y-2
 }
 .product-container .title{
     @apply text-center text-xl font-bold font-serif
