@@ -1,11 +1,11 @@
-import CartContainer from "./containers/CartContainer";
-import ProductContainer from "./containers/ProductContainer";
+import NavContainer from "./containers/NavContainer";
+import Router from "./Routes/Router";
 
 function App() {
   return (
     <div className="app">
-     <ProductContainer/>
-     <CartContainer/>
+    <NavContainer/>
+    <Router/>
     </div>
   );
 }

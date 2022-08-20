@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { adjustQuantity, removeProduct } from '../redux/Action/actions';
 
@@ -12,11 +12,11 @@ const CartItem = ({product}) => {
     return (
         <div className='product'>
             <div className="product_image">
-                <img src={product.img} alt="" />
+                <img src={product.image} alt="" />
             </div>
             <div className='product_details'>
                 <p>
-                    <span className="name">{product.name}</span>
+                    <span className="name">{product.title}</span>
                     <br />
                     <span className='price'>{product.price}$ * {product.qty}</span>
                     <br />

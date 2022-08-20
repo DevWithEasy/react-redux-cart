@@ -1,4 +1,4 @@
-import { products } from "../../data/json/products"
+import  products  from "../../data/json/products.json"
 import { ADD_PRODUCT,REMOVE_PRODUCT,ADJUST_QTY, LOAD_ALL_PRODUCTS,LOAD_CURRENT_PRODUCT } from "../Action/actions"
 
 const initailState = {

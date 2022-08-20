@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {useSelector} from 'react-redux'
-import {AiOutlineShoppingCart} from 'react-icons/ai'
+// import {AiOutlineShoppingCart} from 'react-icons/ai'
 import CartItem from '../component/CartItem';
 
 const CartContainer = () => {
@@ -20,12 +20,12 @@ const CartContainer = () => {
     return (
         <div className="cart-container">
             <h1 className="title">Cart</h1>
-            <div className="cart">
+            {/* <div className="cart">
                 <span>
                     <AiOutlineShoppingCart size={35}/>
                     <p>{count}</p>
                 </span>
-            </div>
+            </div> */}
             <div className="flex justify-between gap-x-1">
                 <div className="products">
                     {
