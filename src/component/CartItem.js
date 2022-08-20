@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { removeProduct } from '../redux/Action/actions';
+import { adjustQuantity, removeProduct } from '../redux/Action/actions';
 
 const CartItem = ({product}) => {
     const [qty,setQty] = useState(product.qty)
     const dispatch = useDispatch()
     const qtyHandler = (e)=>{
         setQty(e.target.value)
+        dispatch(adjustQuantity(product.id,e.target.value))
     }
-    console.log(qty)
     return (
         <div className='product'>
             <div className="product_image">
@@ -18,10 +18,12 @@ const CartItem = ({product}) => {
                 <p>
                     <span className="name">{product.name}</span>
                     <br />
-                    <span className='price'>{product.price}$</span>
+                    <span className='price'>{product.price}$ * {product.qty}</span>
+                    <br />
+                    <span className=''> ={product.price * product.qty}$</span>
                 </p>
                 <p className="adjust">
-                    <input type="number" name="qty" value={qty} onChange={qtyHandler}/>
+                    <input min="1" type="number" name="qty" value={qty} onChange={qtyHandler}/>
                     <button onClick={()=>dispatch(removeProduct(product.id))} >X</button>
                 </p>
             </div>

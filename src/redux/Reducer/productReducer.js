@@ -28,17 +28,21 @@ export const productReducer = (state = initailState, action) => {
             }
         
         case REMOVE_PRODUCT:
-            console.log(action.id)
             return{
                 ...state,
                 cart: state.cart.filter(product => product.id !== action.id)
             }
         
         case ADJUST_QTY:
-            return{}
+            return{
+                ...state,
+                cart:state.cart.map(item=> item.id === action.id? {...item,qty:+action.qty} : item)
+            }
 
         case LOAD_CURRENT_PRODUCT:
-            return{}
+            return{
+
+            }
         default:
             return state
     }

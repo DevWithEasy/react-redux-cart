@@ -7,7 +7,7 @@
 }
 
 .product-container{
-    @apply w-1/2 m-2 space-y-2
+    @apply w-4/12 m-2 space-y-2
 }
 .product-container .title{
     @apply text-center text-xl font-bold font-serif
@@ -48,7 +48,7 @@
     @apply w-8 h-8 px-2 py-1 text-white bg-red-500 rounded-full
 }
 .cart-container{
-    @apply w-1/2 m-2 space-y-2
+    @apply w-8/12 m-2 space-y-2
 }
 
 .cart-container .title{
@@ -64,5 +64,11 @@
     @apply w-6 h-6 flex justify-center items-center absolute -right-2 -top-2 text-white rounded-full bg-red-500 text-center text-xs
 }
 .cart-container .products{
-    @apply space-y-2
+    @apply w-1/2 space-y-2
+}
+.cart-container .price{
+    @apply w-1/2 p-2 rounded
+}
+.cart-container .price p{
+    @apply flex justify-between
 }
